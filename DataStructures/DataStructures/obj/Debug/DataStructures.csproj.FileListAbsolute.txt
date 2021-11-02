@@ -1,0 +1,7 @@
+C:\Users\vyhna\source\repos\C#\DataStructures\DataStructures\bin\Debug\DataStructures.exe.config
+C:\Users\vyhna\source\repos\C#\DataStructures\DataStructures\bin\Debug\DataStructures.exe
+C:\Users\vyhna\source\repos\C#\DataStructures\DataStructures\bin\Debug\DataStructures.pdb
+C:\Users\vyhna\source\repos\C#\DataStructures\DataStructures\obj\Debug\DataStructures.csprojResolveAssemblyReference.cache
+C:\Users\vyhna\source\repos\C#\DataStructures\DataStructures\obj\Debug\DataStructures.csproj.CoreCompileInputs.cache
+C:\Users\vyhna\source\repos\C#\DataStructures\DataStructures\obj\Debug\DataStructures.exe
+C:\Users\vyhna\source\repos\C#\DataStructures\DataStructures\obj\Debug\DataStructures.pdb

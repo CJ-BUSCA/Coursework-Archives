@@ -1,0 +1,7 @@
+C:\Users\vyhna\source\repos\C#\SortingAlgorithms\SortingAlgorithms\obj\Debug\SortingAlgorithms.csproj.CoreCompileInputs.cache
+C:\Users\vyhna\source\repos\C#\SortingAlgorithms\SortingAlgorithms\bin\Debug\SortingAlgorithms.exe.config
+C:\Users\vyhna\source\repos\C#\SortingAlgorithms\SortingAlgorithms\bin\Debug\SortingAlgorithms.exe
+C:\Users\vyhna\source\repos\C#\SortingAlgorithms\SortingAlgorithms\bin\Debug\SortingAlgorithms.pdb
+C:\Users\vyhna\source\repos\C#\SortingAlgorithms\SortingAlgorithms\obj\Debug\SortingAlgorithms.exe
+C:\Users\vyhna\source\repos\C#\SortingAlgorithms\SortingAlgorithms\obj\Debug\SortingAlgorithms.pdb
+C:\Users\vyhna\source\repos\C#\SortingAlgorithms\SortingAlgorithms\obj\Debug\SortingAlgorithms.csprojResolveAssemblyReference.cache

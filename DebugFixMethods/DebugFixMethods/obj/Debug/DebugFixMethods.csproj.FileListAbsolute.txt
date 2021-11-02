@@ -1,0 +1,12 @@
+C:\Users\Osama\OneDrive\Online Classes\4 SNHU\Dev\2015\IT-230\Me\LUs\Practices\Week3\DebugFixMethods\DebugFixMethods\bin\Debug\DebugFixMethods.exe.config
+C:\Users\Osama\OneDrive\Online Classes\4 SNHU\Dev\2015\IT-230\Me\LUs\Practices\Week3\DebugFixMethods\DebugFixMethods\bin\Debug\DebugFixMethods.exe
+C:\Users\Osama\OneDrive\Online Classes\4 SNHU\Dev\2015\IT-230\Me\LUs\Practices\Week3\DebugFixMethods\DebugFixMethods\bin\Debug\DebugFixMethods.pdb
+C:\Users\Osama\OneDrive\Online Classes\4 SNHU\Dev\2015\IT-230\Me\LUs\Practices\Week3\DebugFixMethods\DebugFixMethods\obj\Debug\DebugFixMethods.exe
+C:\Users\Osama\OneDrive\Online Classes\4 SNHU\Dev\2015\IT-230\Me\LUs\Practices\Week3\DebugFixMethods\DebugFixMethods\obj\Debug\DebugFixMethods.pdb
+C:\Users\user6\Desktop\DebugFixMethods\DebugFixMethods\obj\Debug\DebugFixMethods.csprojAssemblyReference.cache
+C:\Users\user6\Desktop\DebugFixMethods\DebugFixMethods\obj\Debug\DebugFixMethods.csproj.CoreCompileInputs.cache
+C:\Users\user6\Desktop\DebugFixMethods\DebugFixMethods\obj\Debug\DebugFixMethods.exe
+C:\Users\user6\Desktop\DebugFixMethods\DebugFixMethods\obj\Debug\DebugFixMethods.pdb
+C:\Users\user6\Desktop\DebugFixMethods\DebugFixMethods\bin\Debug\DebugFixMethods.exe.config
+C:\Users\user6\Desktop\DebugFixMethods\DebugFixMethods\bin\Debug\DebugFixMethods.exe
+C:\Users\user6\Desktop\DebugFixMethods\DebugFixMethods\bin\Debug\DebugFixMethods.pdb
