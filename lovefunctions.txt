@@ -1,0 +1,14 @@
+h\\\\\\\\\\\fnc               bk,,.,.....\'love.load
+
+-Defines game state at the beginning of the function
+
+love.update(dt) "delta time"
+
+-Called frame by frame by Love; dt will be the elapsed time since the last frame and it can be used to scale changes within the game
+
+love.draw()
+
+-Draws objects to screen after update
+
+LOVE2D expects these functions to be implemented in main.lua and calls them internally... If components are missing the program will not function
+

@@ -1,0 +1,27 @@
+Future Coursework
+Learning Additional Programming Languages
+Using What You Learned in the Real World
+
+2. Future Coursework
+As you take nonprogramming classes, you are apt to benefit from your new ability to look at a problem and break it down into component parts. That is how computer programmers do their work. They analyze the problem and turn it into a set of smaller problems. Let’s face it—smaller problems are easier to solve than larger ones.
+You also have the ability to look at data in a new way. You understand data types and data structures. These are certainly not unique to the programming world.
+Perhaps the most important takeaway for you will be that you can take any course, even if it does not seem interesting to you, and be successful. We are able to use resources—such as course materials, course books, textbooks, our peers and instructors, and even Google search results—to augment our learning.
+
+3. Learning Additional Programming Languages
+Are you ready for some really good news? Nearly every concept, idea, and term used in this course book is not unique to Python. Programming languages have unique features and syntax that are easily learned. The difficult part in learning a programming language is understanding the basic concepts, such as variables, data types, data structures, loops, etc. You have already been exposed to that.
+So, if you were to learn a new programming language, you would not need a For Dummies book. Let’s say that you want to learn Java next. You do not need to wonder what kinds of data it has. You already know the answer: integers, floats, strings, etc. Sure, there are some differences, but there are far more similarities in programming languages than there are differences.
+Shed the fear of learning new programming language and believe in the old adage that once you learn one programming language, learning additional ones is easy. Full confidence is approved!
+
+4. Using What You Learned in the Real World
+Okay, so you might not want a career in computer programming, but if you took this class, you are likely to have a career in or around information technology. You might even have developers (programmers) working for you, or you may be on a team with them. You understand their language, Python or otherwise. You truly have taken a great glimpse into their world, and that will help you communicate with them more effectively.
+Finally, when we program, we think of issues and how to solve them. Our minds are analytical, and we have the cognitive ability to create organization and solutions from a mess of problems and uncertainty. You are truly ready for anything!
+
+
+
+
+
+
+
+The file you are opening(customerData.csv) contains mixed line endings, which can cause problems when editing your code and using source control management. We strongly recommend that you use Linux line endings only, as this will avoid problems.
+
+Would you like us to change the line endings in this file for you? If you choose "No", the file will be opened in read-only mode.

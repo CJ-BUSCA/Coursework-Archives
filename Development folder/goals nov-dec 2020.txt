@@ -1,0 +1,37 @@
+With the completion of my pong game I have some specific goals I would like to accomplish when it comes to developing programs and games. 
+
+
+By the end of 2020 I want to complete:
+
+Five small scale projects.
+Two larger scale projects.
+
+I want to start my small scale projects in Python, develop 3 python games. I am going to attempt to develop these games unassisted.
+2 out of the 5 projects I will complete will be done in Java, to familiarize myself with the programming language for my next class. 
+
+My two large scale projects, one will by done in python, the other in java. 
+
+I have an idea for my larger scale project. A free minecraft clone, for mobile devices and for PC.
+
+Call it  either freecraft or battlecraft... Battleblocks? freeblocks.
+
+
+I want to throw in a bonus project, considering I have completed my first ever pong tutorial using turtle I want to try to use pygame instead
+
+
+Here is a check list of tasks I will accomplish:
+
+1. Pygame Pong -Pongition-(Implement my own cool features, actual 3d type graphics)
+2. Text adventure game (Java)
+3. Roguelike dungeon crawler (Python)
+4. Space shooter (Java)
+5. Puzzle based game like puyo (Python)
+6. Java pong
+
+
+7. Minecraft clone in python (maybe java)
+8. Classic Platformer like Sonic
+9. Brick breaker game
+
+
+43624229

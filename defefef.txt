@@ -1,0 +1,471 @@
+
+# Load our command line arguments
+import sys
+P= sys.argv[1]
+S= sys.argv[2]
+
+# Your code goes here
+
+file = open(P, 'r')
+ptext = file.read()
+print(ptext.count(S))
+file.close()
+
+WRITING TO A TEXT FILE
+
+
+# set a variable to the path of the file
+filepath= '/tmp/out.txt'
+
+# something to write out
+text= "A newt?"
+
+# open our file for writing
+file1= open(filepath, 'w')
+
+# write 'text', to the file at ‘filepath’
+file1.write(text)
+file1.close()
+
+# print out the contents of the file
+file1= open(filepath, 'r')
+print(file1.read())
+file1.close()
+
+# write something else out to the same file
+file1= open(filepath, 'w')
+file1.write('I got better.')
+file1.close()
+
+# print out the contents of the file again
+file1= open(filepath, 'r')
+print(file1.read())
+
+
+
+
+
+# Get the filepath from the command line
+import sys
+import re
+# something to write out
+I= sys.argv[1]
+# set a variable to the path of the file
+O= sys.argv[2] 
+
+S= sys.argv[3]
+T= sys.argv[4]
+
+# open our file for writing
+# write 'text', to the file at ‘filepath’
+with open(I, 'r+') as f:
+  text = f.read()
+  text= re.sub(S , T, text)
+  f.write(text)
+  f.close()
+
+# print out the contents of the file
+text= open(O, 'r')
+print(O.read())
+f.close()
+
+'''# write something else out to the same file
+file1= open(filepath, 'w')
+file1.write('I got better.')
+file1.close()'''
+
+# print out the contents of the file again
+#file1= open(filepath, 'r')
+#print(file1.read())
+
+
+###LESSON LEARNED WRITING CODE###
+
+# Get the filepath from the command line
+import sys
+import re
+I= sys.argv[1] 
+O= sys.argv[2] 
+S= sys.argv[3]
+T= sys.argv[4]
+
+# Your code goes here
+
+'''with open(I, 'r+') as f:
+    O = f.read()
+    O = re.sub(S, T, O)
+    f.seek(0)
+    f.write(O)
+    f.truncate()'''
+
+'''with open(I, 'r') as file_in:
+    text = file_in.read()
+    text = text.replace(S,T)
+    with open(O, 'w') as file_out:
+        file_out.write(text);'''
+
+with open(I, 'r') as f:
+    text = f.read()
+    text = text.replace(S, T)
+    with open (O, 'w') as fo:
+      fo.write(text);
+
+
+
+####Fixed length records####
+
+
+# Get the filepath from the command line
+import sys
+
+
+P= sys.argv[1] 
+F= sys.argv[2]
+L= sys.argv[3]
+B= sys.argv[4]
+
+#NOT MY CODE.
+import re 
+
+file1 = open(P, 'r') 
+data = file1.read() 
+file1.close() 
+
+
+found = re.findall(F + ' *' + L + ' *', data) 
+chars = len(found[0])
+
+beginChar = data.find(found[0])
+birthday = data[beginChar + chars:beginChar + chars + 8]
+data = data.replace(birthday, B)
+
+file1 = open(P, 'w')
+file1.write(data)
+
+file1.close 
+
+
+file1 = open(P, 'w')
+file1.write(data)
+file1.close()
+
+#####################################################
+
+# ----------------------------------------------------------------
+# My Pipe Delimited String Functions 
+# ----------------------------------------------------------------
+
+# function returns a list from a pipe dlimited string
+def getListFromPipeDelimitedText(pipeDelimitedText):
+  recordList= pipeDelimitedText.split('|')
+  return recordList
+
+# function returns a pipe delimited string from a list
+def getPipeDelimitedTextFromList(recordList):
+  return ('|').join(recordList)
+
+# function which will print out all of our records
+def printRecords(recordList):
+  for i in range(0,len(records)):
+    print('Record '+ str(i) +': ('+ str(records[i]) +')')
+
+# ----------------------------------------------------------------
+# Main Section
+# ----------------------------------------------------------------
+data= '100|1000|1|999999|700'                # sample data
+print(data)                                  # print data
+
+records= getListFromPipeDelimitedText(data)  # create records
+printRecords(records)                        # and print them
+
+data2= getPipeDelimitedTextFromList(records) # make a string
+print(data2)                                 # print it
+
+
+
+###########################################################################################
+
+# Get the filepath from the command line
+import sys
+import re
+P= sys.argv[1] 
+F= sys.argv[2]
+L= sys.argv[3]
+B= sys.argv[4]
+
+# ----------------------------------------------------------------
+# 
+# Our Helper functions:
+# 
+# ----------------------------------------------------------------
+
+#
+# Loads the file at filepath 
+# Returns a 2d array with the data
+# 
+def load2dArrayFromFile(filepath):
+  # Your code goes here:
+  records= []
+  with open(filepath, 'r') as f:
+    element=f.readlines()
+    for row in element:
+      recordlist=row.strip('\n').split('|')
+      records.append(recordlist)
+  return records
+#
+# Searches the 2d array 'records' for firstname, lastname.
+# Returns the index of the record or -1 if no record exists
+# 
+def findIndex(records, firstname, lastname):
+  # Your code goes here:
+  for x in range(len(records)):
+    row = records[x]
+    if row[0]== firstname and row[1]==lastname:
+      return x
+    
+  return 
+        
+        
+# Sets the birthday of the record at the given index
+# Returns: nothing
+def setBirthday(records, index, newBirthday):
+  # Your code goes here:
+  if index== None:
+    return
+  records[index][2]=newBirthday
+
+# Convert the 2d array back into a string
+# Return the text of the 2d array
+def makeTextFrom2dArray(records):
+  # Your code goes here:
+  concat=[]
+  charV=""
+  for row in records:
+    concat.append(("|").join(row))
+  charV=("\n").join(concat)
+  return charV
+# ----------------------------------------------------------------
+# 
+#  Our main code body, where we call our functions.
+#  
+# ----------------------------------------------------------------
+
+# Load our records from the file into a 2d array
+records= load2dArrayFromFile(P)
+
+# Find out which index, if any, has the name we are hunting
+indexWeAreHunting= findIndex(records, F, L)
+
+# Set the birthday record to the one we were passed
+setBirthday(records, indexWeAreHunting, B)
+
+# Convert the records into a text string
+output= makeTextFrom2dArray(records)
+
+# Your code goes here
+
+# write the text string out to the file
+
+outputFile = open(P,'w')
+outputFile.write(output)
+outputFile.close
+
+
+#####################################################################
+import sys
+F1= sys.argv[1]
+F2= sys.argv[2]
+
+# Your code goes here
+
+#
+# Create a function that turns pipe-delimited strings into 2d arrays
+# 
+def pipe2a(text):
+  records= text.split("\n")
+  for i in range(0, len(records)):
+    records[i]= records[i].split("|")
+  return records
+
+#
+# Create a function that turns 2d arrays into pipe-delimited strings.
+# 
+def a2pipe(a):
+  text= ""
+  for i in range(0, len(a)):
+    account= a[i]
+    for j in range(0, len(account)):
+      account[j]= str(account[j])
+
+    text = text + "|".join(account) + "\n"
+  return text;
+
+#
+# Read in the accounts and transactions
+# 
+accounts= pipe2a(open(F1, 'r').read())
+transactions= pipe2a(open(F2, 'r').read())
+
+# ----------------------------------------------------------------
+# Main Section
+#
+
+
+# for each transaction
+for transactionIndex in range(0, len(transactions)):
+  transaction= transactions[transactionIndex]
+  if(len(transaction) >= 4):
+    # look through the accounts for the matching account
+    for accountIndex in range(0,len(accounts)):
+      account= accounts[accountIndex]
+      if(len(account) >= 3):                      # make sure we have
+        balance= int(account[2])                  # enough fields
+        transactionAmount= int(transaction[1])
+        if(account[0] == transaction[2]):         # account matches?
+          if(account[1] == transaction[3]):       # pin code matches?
+            if(transaction[0] == 'add'):
+              accounts[accountIndex][2]= balance + transactionAmount
+            elif (transaction[0] == 'sub' and transactionAmount <= balance):
+              accounts[accountIndex][2]= balance - transactionAmount
+
+
+# Write the answer back out to the original file
+open(F1, 'w').write(a2pipe(accounts))
+
+
+
+######################### old version #################################################
+
+# Get the filepath from the command line
+import sys
+F1= sys.argv[1] 
+F2= sys.argv[2]
+
+# Your code goes here
+import sys
+F1= sys.argv[1] 
+F2= sys.argv[2]
+# Create a function that turns pipe-delimited strings into 2d arrays
+def pipe2a(text):
+  records= text.split("\n")
+  for i in range(0, len(records)):
+    records[i]= records[i].split("|")
+  return records
+
+# Create a function that turns 2d arrays into pipe-delimited strings.
+def a2pipe(a):
+  text= ""
+  for i in range(0, len(a)):
+    account= a[i]
+    for j in range(0, len(account)):
+      account[j]= str(account[j])
+      text = text + "|".join(account) + "\n"
+  return text;
+
+# Read in the accounts and transactions
+accounts= pipe2a(open(F1, 'r').read())
+transactions= pipe2a(open(F2, 'r').read())
+
+# Main Section
+# for each transaction
+for transactionIndex in range(0, len(transactions)):
+  transaction= transactions[transactionIndex]
+  if(len(transaction) >= 4):
+    # look through the accounts for the matching account
+    for accountIndex in range(0,len(accounts)):
+      account= accounts[accountIndex]
+      if(len(account) >= 3):                      # make sure we have
+        balance= int(account[2])                  # enough fields
+        transactionAmount= int(transaction[1])
+        if(account[0] == transaction[2]):         # account matches?
+          if(account[1] == transaction[3]):       # pin code matches?
+            if(transaction[0] == 'add'):
+              accounts[accountIndex][2]= balance + transactionAmount
+            elif (transaction[0] == 'sub' and transactionAmount <= balance):
+              accounts[accountIndex][2]= balance - transactionAmount
+
+
+# Write the answer back out to the original file
+outputFile = open(F1,'w')
+outputFile.write(a2pipe(accounts))
+outputFile.close
+
+'''You forgot to close the file F1 
+when you were done with it 
+(OP used with open syntax to ensure the file is closed).
+Also, you forgot to declare the variables F1 and F2 
+in your code snippet. 
+Finally, there are ample opportunities to make your 
+code easier to read. 
+for transactionIndex in range(0, len(transactions)):
+transaction= transactions[transactionIndex] 
+is much harder to understand than
+for transaction in transactions:'''
+
+
+###############################REG EX SEARCH CHALLENGE##########################
+
+import re
+#The string to search for the regular expression occurrence (This is provided to the student)
+
+search_string='''This is a string to search for a regular expression like regular expression or regular-expression or regular:expression or regular&expression'''
+
+print(search_string)
+#1.  Write a regular expression that will find all occurrences of:
+a_pattern = "regular expression"
+a_match = re.match(a_pattern, search_string)
+b_pattern = "regular-expression"
+b_match = re.match(b_pattern, search_string)
+c_pattern = "regular:expression"
+c_match = re.match(c_pattern, search_string)
+d_pattern = "regular&expression" 
+d_match = re.match(d_pattern, search_string)    
+    
+#2.  Assign the regular expression to a variable named pattern
+a_pattern = "regular expression"
+a_match = re.findall(a_pattern, search_string)
+ 
+pattern_list = ["regular expression","regular-expression","regular:expression","regular&expression"]
+##1.  Using the findall() method from the re package determine if there are occurrences in search_string
+for i in range(0,len(pattern_list),1):
+    #.   Assign the outcome of the findall() method to a variable called match1
+    match1 = re.findall(pattern_list[i], search_string)
+    #2.  If match1 is not None:
+    if match1 != "":
+        #    a.  Print to the console the pattern used to perform the match, 
+        #    followed by the word 'matched'
+        print(pattern_list[i]," matched")
+        #3.  Otherwise:
+    else:
+        #   a.  Print to the console the pattern used to perform the match, 
+        #   followed by the words 'did not match'
+        print(pattern_list[i]," did not match")
+		
+	###################################### dammit ##################################
+	
+	import re
+
+#Sentence with phrase to replace
+sentence='In my string, I have my val, my-val, my_val, my&val and my=val.  But what I really want is my--val.'
+
+#Pattern with the expression to replace
+pattern = "my[ -_&=]val"
+
+#String to use for substitution
+substitution="my--val"
+
+#Print out the original sentence
+print(sentence + "\n")
+
+#Replace the regular expression with the substitution string
+match = re.findall(pattern, sentence)
+
+#Print out the results of the match
+print("Match = %s\n" % str(match))
+
+#Replace the results
+replace_results = re.sub(pattern, substitution, sentence)
+
+#Print out the string containing the substitutions
+print(replace_results)
+

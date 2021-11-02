@@ -1,0 +1,25 @@
+Health
+
+Health is the amount of damage a character can take before dying. 
+
+Health is visualized by the healthbar on the top lefthand corner of the screen along with the player's name. The amount of health a character has depends on the class that is chosen. 
+
+
+##
+##Health can be recovered by food such as rations/medkits/syringes## 
+##
+
+
+	##CRITICAL HEALTH##
+
+	If the player is at low health: 
+		brief SFX will play getting the players attention to the health bar
+		the status bar will begin to flash
+	
+	##In this state, food does not heal the player as quickly. The best option to recover is use of syringe and medkits/syringes##
+
+	##If the character is in critical health as well as "Combat High" the amount of hits the player can take will be doubled##
+
+Bleeding
+
+Bleeding is a state when a character is inflicted with an injury causing them to 'bleed' from the wound. This state will slowly drain the health of the player that is affected. This is not to be confused with critical health. However, while a player is in critical health they could potentially be bleeding out as well.

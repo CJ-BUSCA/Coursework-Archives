@@ -1,0 +1,32 @@
+System 1 = visitor system
+
+
+(input) is pet dog or cat?
+if dog print current space for dog: 30
+else print current space for cat: 12
+
+is the pet a returning visitor?
+if return: update info?
+else input the information for your pet(weight)
+
+how long will the pet be staying?
+if dog staying for more than 2 days: will you like your pet to be groomed?
+
+pet has been assigned to space #
+
+final price
+if cat float $18.00 dailycharge
+dog >=30 lbs $34.00 largecharge + largegroom $29.95
+dog 20-30 lbs $29.00 medcharge + medgroom 24.95
+dog <20 lbs $24.00 smallcharge + smallgroom  19.95
+
+system 2 = management system
+call the animal by spot
+
+move from spot to spot
+record feedings
+if dog record yard time
+add notes
+update data
+paid for or not 
+space clean alert

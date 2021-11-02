@@ -1,0 +1,9 @@
+Stamina
+
+This gauge is the "energy" output of the character, it slowly decreases as the player is actively playing the game. It can be recovered by eating food. When this gauge is maxed out the player will:
+
+	recover health faster
+	recover from injuries faster
+	balance and aiming at max potential
+	ability to swim and hold breath for longer duration
+	

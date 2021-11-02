@@ -1,0 +1,4 @@
+A database, like a recall roster file format. That you can send to your phone and it copies the contact information to a phonebook for future use.
+
+
+Think of the current recall roster find ways you can implement it into a digital format.
