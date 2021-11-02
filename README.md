@@ -1,1 +1,1 @@
-# Unorganized List of past work. 
+Contains notes, and past coursework. 
