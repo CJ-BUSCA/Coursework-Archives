@@ -1,0 +1,11 @@
+	//int mit_zip_code = 02137;  //02139; //Will not compile. Invalid octal digit. 
+
+	/*Eliminate leading zeroes on decimal literals. Why? Because a leading zero indicates an octal. This line will not compile because 9 is not an octal digit.
+	*Like our "normal" numbers are base 10 (or radix 10) because we have 10 different digits (from the 0 to the 9):
+
+	*0123456789
+
+	*the octals numbers include only the representations for the values from 0 to 7:
+
+	*01234567
+	*/
