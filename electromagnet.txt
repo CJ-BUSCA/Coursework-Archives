@@ -1,0 +1,3 @@
+Electromagnets can be turned off and on and are used to control movements  
+
+Motors, are a prime example  Waving a magnet around a coil of wire produces electricity.
