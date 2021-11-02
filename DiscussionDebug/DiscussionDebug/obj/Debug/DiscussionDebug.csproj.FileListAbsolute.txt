@@ -1,0 +1,7 @@
+C:\Users\user6\source\repos\DiscussionDebug\DiscussionDebug\bin\Debug\DiscussionDebug.exe.config
+C:\Users\user6\source\repos\DiscussionDebug\DiscussionDebug\bin\Debug\DiscussionDebug.exe
+C:\Users\user6\source\repos\DiscussionDebug\DiscussionDebug\bin\Debug\DiscussionDebug.pdb
+C:\Users\user6\source\repos\DiscussionDebug\DiscussionDebug\obj\Debug\DiscussionDebug.csprojAssemblyReference.cache
+C:\Users\user6\source\repos\DiscussionDebug\DiscussionDebug\obj\Debug\DiscussionDebug.csproj.CoreCompileInputs.cache
+C:\Users\user6\source\repos\DiscussionDebug\DiscussionDebug\obj\Debug\DiscussionDebug.exe
+C:\Users\user6\source\repos\DiscussionDebug\DiscussionDebug\obj\Debug\DiscussionDebug.pdb
